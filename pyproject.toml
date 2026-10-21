@@ -1,0 +1,19 @@
+[project]
+name = "glab-927-1-2-amira-lions"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Amira Lions", email = "amiralions@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "nltk>=3.10.3",
+]
+
+[project.scripts]
+glab-927-1-2-amira-lions = "glab_927_1_2_amira_lions:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
