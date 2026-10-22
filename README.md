@@ -32,19 +32,29 @@ Uses `WordNetLemmatizer` to convert words in another sample email to their dicti
 
 - Python 3.14.7
 - NLTK 3.10.3
-- VS Code
-- uv
+- Visual Studio Code
+- uv (Python project and dependency manager)
 - Git and GitHub
+
+## Python Version and Dependency Management
+
+The project uses the following configuration files:
+
+- `.python-version` — Selects Python 3.14.7 for local development.
+- `pyproject.toml` — Defines project metadata, supported Python versions, and the NLTK dependency.
+- `uv.lock` — Records exact resolved dependency versions to support reproducible installations.
+
+The Python version and dependency requirements are established during project setup and reviewed whenever the environment changes.
 
 ## Running the Program
 
-From the project directory, install the required dependencies:
+From the project directory, synchronize the Python environment with the existing lockfile:
 
 ```powershell
-uv sync
+uv sync --locked
 ```
 
-Then execute the Python file:
+Then execute the Python source file:
 
 ```powershell
 uv run python glab_927_1_2.py
@@ -58,10 +68,17 @@ NLTK may download required language resources on the first run.
 
 All three tasks were executed successfully in the local Python environment without errors.
 
+The final verification confirmed:
+
+- NLTK 3.10.3 imported successfully.
+- The stemming task produced the expected processed text.
+- The lemmatization task produced the expected processed text.
+- The project environment synchronized successfully using `uv sync --locked`.
+
 ## Submission
 
 The required Python source file is:
 
 `glab_927_1_2.py`
 
-This file is submitted directly to Canvas for instructor review.
+Submit this file directly to Canvas for instructor review.

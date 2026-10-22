@@ -1,7 +1,8 @@
 [project]
 name = "glab-927-1-2-amira-lions"
 version = "0.1.0"
-description = "Add your description here"
+
+description = "NLTK stemming and lemmatization for business email text processing"
 readme = "README.md"
 authors = [
     { name = "Amira Lions", email = "amiralions@gmail.com" }
